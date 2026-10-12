@@ -1,0 +1,30 @@
+{
+    "action": {
+        "default_title": "Dọn dẹp bookmark"
+    },
+    "background": {
+        "service_worker": "src/background.js",
+        "type": "module"
+    },
+    "description": "Quét link chết, gỡ trùng lặp và tự sắp xếp bookmark vào thư mục theo chủ đề.",
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "manifest_version": 3,
+    "name": "Bookmark Cleaner",
+    "options_page": "src/options.html",
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "sidePanel"
+    ],
+    "side_panel": {
+        "default_path": "src/sidepanel.html"
+    },
+    "version": "1.0.1"
+}

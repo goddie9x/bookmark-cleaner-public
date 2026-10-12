@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư - Bookmark Cleaner</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px; line-height: 1.7; color: #1c2333; }
+  h1 { font-size: 24px; } h2 { font-size: 18px; margin-top: 28px; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; }
+  ul { padding-left: 20px; } li { margin-bottom: 6px; }
+  .meta { color: #6b7280; font-size: 14px; }
+  code { background: #f3f4f6; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>Chính sách quyền riêng tư - Bookmark Cleaner</h1>
+<p class="meta">Cập nhật lần cuối: Tháng 10, 2026</p>
+
+<p>Bookmark Cleaner là tiện ích mở rộng trên trình duyệt (Chrome/Edge) giúp bạn dọn dẹp bookmark:
+quét link chết, tìm bookmark trùng lặp và tự động sắp xếp các bookmark còn hoạt động vào thư mục
+theo chủ đề. Chúng tôi cam kết bảo vệ quyền riêng tư của bạn: tiện ích <strong>không thu thập,
+không theo dõi và không gửi bất kỳ dữ liệu cá nhân nào</strong> của bạn tới máy chủ của chúng tôi —
+đơn giản vì chúng tôi không vận hành bất kỳ máy chủ thu thập dữ liệu nào.</p>
+
+<h2>1. Thu thập dữ liệu</h2>
+<ul>
+  <li>Không có phân tích hành vi (analytics), không theo dõi người dùng (tracking), không quảng cáo.</li>
+  <li>Không tạo tài khoản, không yêu cầu đăng nhập, không định danh người dùng.</li>
+  <li>Tiện ích chỉ đọc bookmark của chính bạn trên trình duyệt để thực hiện việc dọn dẹp —
+      danh sách bookmark không bao giờ rời khỏi thiết bị của bạn.</li>
+</ul>
+
+<h2>2. Dữ liệu được lưu trữ (chỉ trên thiết bị của bạn)</h2>
+<p>Mọi dữ liệu chỉ được lưu trong <code>chrome.storage</code> trên trình duyệt của bạn:</p>
+<ul>
+  <li>Kết quả lần quét gần nhất (trạng thái từng bookmark).</li>
+  <li>Cài đặt: domain whitelist, quy tắc phân loại thư mục, cách tạo thư mục, timeout.</li>
+  <li>Snapshot hoàn tác của 5 lần áp dụng gần nhất.</li>
+  <li>Gỡ cài đặt tiện ích sẽ xóa toàn bộ dữ liệu khỏi trình duyệt.</li>
+</ul>
+
+<h2>3. Quyền truy cập (Permissions) và mục đích sử dụng</h2>
+<ul>
+  <li><code>bookmarks</code>: đọc bookmark để quét, tạo thư mục, di chuyển/xoá theo lựa chọn của bạn.</li>
+  <li><code>storage</code>: lưu kết quả quét, cài đặt và snapshot hoàn tác.</li>
+  <li><code>sidePanel</code>: hiển thị giao diện dọn dẹp.</li>
+  <li><code>&lt;all_urls&gt;</code> (host permission): kiểm tra trạng thái sống/chết của từng link
+      bằng request HTTP trực tiếp từ trình duyệt của bạn. Không dùng để đọc nội dung trang hay theo dõi bạn.</li>
+</ul>
+
+<h2>4. Kết nối mạng (chỉ khi bạn bấm "Quét")</h2>
+<p>Kết nối mạng duy nhất là khi bạn bấm nút "Quét": tiện ích gửi request HTTP trực tiếp từ trình
+duyệt của bạn tới từng URL trong bookmark để kiểm tra (tương tự như bạn tự mở từng link).
+Chúng tôi không nhận, không lưu trữ và không thấy bất kỳ dữ liệu nào từ các request này.</p>
+
+<h2>5. Quyền kiểm soát và xóa dữ liệu của bạn</h2>
+<ul>
+  <li>Mọi thao tác xoá/di chuyển đều do bạn tick chọn và xác nhận.</li>
+  <li>Tự động tải file sao lưu bookmark (HTML chuẩn) về máy trước mỗi lần áp dụng.</li>
+  <li>Nút "Hoàn tác" khôi phục trạng thái trước khi áp dụng.</li>
+</ul>
+
+<h2>6. Thay đổi chính sách</h2>
+<p>Chính sách này có thể được cập nhật khi tiện ích thay đổi về mặt kỹ thuật. Mọi thay đổi sẽ được
+công bố công khai tại trang này với ngày cập nhật mới.</p>
+
+<hr>
+<p><strong>Tác giả:</strong> Hoàng Minh Tâm<br>
+<strong>Liên hệ:</strong> boykeodang@gmail.com</p>
+</body>
+</html>
